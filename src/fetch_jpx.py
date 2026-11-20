@@ -13,7 +13,7 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-JPX_LIST_URL = "https://www.jpx.co.jp/markets/statistics-equities/misc/tvdivq0000001vg2-att/data_j.xls"
+JPX_LIST_URL = "https://www.jpx.co.jp/markets/statistics-equities/misc/tvdivq0000001vg2-att/data_j.xlsx"
 
 # 東証33業種 → 参考サイト準拠の独自12業種グループ
 SECTOR33_TO_GROUP: dict[str, str] = {
