@@ -238,6 +238,7 @@ def fetch_stock_data(
                     "net_income": _extract_series(inc, ["Net Income", "Net Income Common Stockholders"]),
                     "eps": _extract_series(inc, ["Diluted EPS", "Basic EPS"]),
                     "interest_expense": _extract_series(inc, ["Interest Expense", "Interest Expense Non Operating"]),
+                    "shares": _extract_series(inc, ["Diluted Average Shares", "Basic Average Shares"]),
                 },
                 "quarterly": {
                     "revenue": _extract_series(q_inc, ["Total Revenue", "Operating Revenue"], limit=6),
